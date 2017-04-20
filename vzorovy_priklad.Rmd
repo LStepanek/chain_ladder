@@ -53,8 +53,17 @@ Vliv měnící se inflace během let vzniku závazků, které jsou pokryty troj�
 
 \end{enumerate}
 
-Pro účely prezentace všech trojúhelníku v tomto dokumentu byly použity funkce \textsf{R}-kového balíčku \texttt{xtable}, které vrací \textsf{R}-kové objekty v \TeX-ovém kódu. Rovněž byly vytvořeny identické výstupy \texttt{aktuarske\_trojuhelniky.xlsx} pro tabulkový procesor MS Excel\textsuperscript{\textregistered}, a sice pomocí funkcionalit \mbox{\textsf{R}-kového} balíčku \texttt{openxlsx}\footnote{Dlužno říci, že vytvoření plnohodnotného formátovaného dokumentu \texttt{.xlsx} jen pomocí \textsf{R} vyžaduje mimo jiné i instalaci vývojářských balíčků \href{http://cran.r-project.org/bin/windows/Rtools/}{\texttt{Rtools}}.}.
+Pro účely prezentace všech trojúhelníku v tomto dokumentu byly použity funkce \textsf{R}-kového balíčku \texttt{xtable}, které vrací \textsf{R}-kové objekty v \TeX-ovém kódu. Rovněž byly vytvořeny identické výstupy \texttt{aktuarske\_trojuhelniky.xlsx} pro tabulkový procesor MS Excel\textsuperscript{\textregistered}, a sice pomocí funkcionalit \mbox{\textsf{R}-kového} balíčku \texttt{openxlsx}\footnote{Dlužno říci, že vytvoření plnohodnotného formátovaného dokumentu \texttt{.xlsx} jen pomocí \textsf{R} vyžaduje mimo jiné i instalaci vývojářských balíčků \href{http://cran.r-project.org/bin/windows/Rtools/}{\texttt{Rtools}}.}. Skript řešící celý problém je možné jednoduše inicializovat a exekuovat v \textsf{R} pomocí příkazu
 
+```{r, eval = FALSE, echo = TRUE}
+
+source(
+    "https://raw.githubusercontent.com/LStepanek/chain_ladder/master/script.R"
+)
+
+```
+
+který je uložen online v příslušném \href{http://github.com/LStepanek/chain_ladder}{autorově repozitáři} na GitHubu.
 
 
 \bigskip
