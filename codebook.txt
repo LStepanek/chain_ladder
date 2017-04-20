@@ -1,0 +1,5 @@
+variable_name;variable_czech_name
+my_triangle;vstupni trojuhelnik
+cumulative_triangle;kumulativni trojuhelnik
+development_factors;vyvojove faktory
+outstanding_claims_reserves;budouci rezervy
