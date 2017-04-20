@@ -1,0 +1,60 @@
+﻿%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% loaduju některé balíčky -----------------------------------------------------
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{tocloft}
+\usepackage{enumerate}
+\usepackage{eso-pic}
+\usepackage[czech]{babel}
+\usepackage{csquotes}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{bm}
+\usepackage[bottom]{footmisc}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{adjustbox}
+\usepackage{makecell}
+
+
+% české uvozovky --------------------------------------------------------------
+\DeclareQuoteAlias{german}{czech}
+\MakeOuterQuote{"}
+
+% přejmenovávám popisek obsahu na "Obsah" -------------------------------------
+\renewcommand{\contentsname}{Obsah}
+
+% přejmenovávám popisky obrázků na "Obr." -------------------------------------
+\renewcommand{\figurename}{Obr.}
+
+% přejmenovávám popisky tabulek na "Tab." -------------------------------------
+\renewcommand\tablename{Tab.}
+
+% upravuji formát obsahu ------------------------------------------------------
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% definuji prostředí nečíslovaného lemmatu ------------------------------------
+\newtheorem*{lemma*}{Lemma}
+
+% definuji prostředí nečíslované definice -------------------------------------
+\newtheorem*{mydef*}{Definice}
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedmydef}{Definice}
+
+% definuji dolní a horní celou část -------------------------------------------
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+% definuji arg max ------------------------------------------------------------
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
